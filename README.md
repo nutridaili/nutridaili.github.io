@@ -4,3 +4,4 @@ The NutriDaili promotes healthy eating for students by rewarding them PC Points 
 they are eating the right foods.
 Name:		Student Number:
 Rohan Prasad	300004271
+Faizaan Chishtie    300008947
