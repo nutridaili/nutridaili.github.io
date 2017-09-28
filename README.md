@@ -6,3 +6,5 @@ Name:		Student Number:
 Rohan Prasad	300004271
 Faizaan Chishtie    300008947
 Alexander Moussa    300018112
+Antonio Resendiz    300012624
+Waleed Zafar	    300007069
