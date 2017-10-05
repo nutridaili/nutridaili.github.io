@@ -1,11 +1,9 @@
 body {
-background-image: url("https://images.unsplash.com/photo-1455099229380-7b52707e356a?dpr=1&auto=compress,format&fit=crop&w=1500&h=&q=80&cs=tinysrgb&crop=");
-background-image: cover;
-background-attachment: fixed;
-
-background-color: grey;
-color: white;
-
+  background-image: url("https://images.unsplash.com/photo-1455099229380-7b52707e356a?dpr=1&auto=compress,format&fit=crop&w=1500&h=&q=80&cs=tinysrgb&crop=");
+  background-image: cover;
+  background-attachment: fixed;
+  background-color: grey;
+  color: white;
 }
 
 #ParaOne {
@@ -13,7 +11,6 @@ text-align: center;
 font-family: 'fantasy', sans-serif;
 font-size: 50;
 color: purple;
-
 }
 
 #Bout{
@@ -38,5 +35,4 @@ p {
   font-family:sans-serif;
   text-align: left;
   padding: 50px;
-  
 }
