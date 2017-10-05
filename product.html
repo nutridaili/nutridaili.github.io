@@ -23,8 +23,11 @@
         <script type="text/javascript">
           function JsFunction(){
             var text=document.getElementsById('text_in').value;
+            return text;
           }
+          document.getElementsById("output").innerHTML = JsFunction();
         </script>
+        <p id="output"></p> 
       </div>
     </body>
 </html>
