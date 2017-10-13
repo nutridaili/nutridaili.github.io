@@ -1,10 +1,55 @@
+
 body {
-  background-image: url("https://images.unsplash.com/photo-1455099229380-7b52707e356a?dpr=1&auto=compress,format&fit=crop&w=1500&h=&q=80&cs=tinysrgb&crop=");
-  background-image: cover;
-  background-attachment: fixed;
-  background-color: grey;
-  color: white;
+  background-color: black;
 }
+
+div.container {
+    width: 100%;
+    border: 1px solid black;
+}
+
+header {
+    padding: 360;
+    background-image: url("https://images.unsplash.com/photo-1455099229380-7b52707e356a?dpr=1&auto=compress,format&fit=crop&w=1500&h=&q=80&cs=tinysrgb&crop=");
+    background-image: cover;
+    background-attachment: fixed;
+    color: black;
+    text-align: center;
+}
+
+footer{
+  padding: 12;
+  background-color: black;
+  color: orange;
+  clear: left;
+  text-align: center;
+
+}
+/*
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+*/
+article {
+    margin-left: 1px;
+    padding: 15em;
+    overflow: hidden;
+    color: white;
+    background-color: grey;
+}
+
 
 #ParaOne {
 text-align: center;
