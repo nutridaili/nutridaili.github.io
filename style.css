@@ -14,6 +14,11 @@ body {
 }
 
 /* Style the links inside the navigation bar */
+div.topnav img{
+  float: left;
+  text-align: center;
+  border: 1px solid #333;
+}
 
 .topnav a {
     float: left;
@@ -37,10 +42,6 @@ body {
     color: white;
 }
 
-div.topnav b {
-  float: right;
-  text-align: center;
-}
 
 div.main {
     width: 100%;
@@ -50,7 +51,7 @@ div.main {
 
 header {
     padding: 360;
-    background-image: url("https://images.unsplash.com/photo-1455099229380-7b52707e356a?dpr=1&auto=compress,format&fit=crop&w=1500&h=&q=80&cs=tinysrgb&crop=");
+    background-image: url("https://images.unsplash.com/photo-1490818387583-1baba5e638af?dpr=1&auto=compress,format&fit=crop&w=1531&h=&q=80&cs=tinysrgb&crop=");
     background-image: cover;
     background-attachment: fixed;
     color: black;
@@ -83,11 +84,11 @@ nav ul a {
 }
 */
 article {
-    margin-left: 1px;
+    margin-left: 0px;
     padding: 15em;
     overflow: hidden;
     color: white;
-    background-color: grey;
+    background-color: #bdaeff;
 }
 
 
@@ -104,7 +105,9 @@ color: purple;
 
 #MainTitle {
   text-align: center;
-  font-family: sans-serif;
+  font-family: cursive;
+  font-size: 80;
+  color: #ff6680;
 }
 
 h1{
