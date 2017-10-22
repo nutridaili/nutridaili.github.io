@@ -16,7 +16,13 @@ colours similar to berries, as well as purples and oranges
 to reflect on the healthy aspect of our product. We will
 also make use of black to provide contrast to the bright
 colours and enhance visual appeal.
-
+The codes are:
+#333
+#f2f2f2
+#ddd
+#4CAF50
+#bdaeff
+#ff6680
 
 Iconography
 ===========
@@ -28,7 +34,7 @@ buttons to unify the look of the website.
 Typography
 ==========
 
-We will make use of Arial Black for our text.
+We will make use of Arial for our text.
 
 
 Links
