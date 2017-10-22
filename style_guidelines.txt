@@ -1,0 +1,44 @@
+Overall Look and Feel of Nutri Daili
+====================================
+
+The overall look and feel should be fresh and lively,
+with bright imagery of fruits and vegetables.
+The buttons used will have a flat look to draw most of
+the user's attention to the healthy foods displayed.
+The website should be overall welcoming to the user.
+
+
+Colours
+=======
+
+The colours that we will make use of are reddish-pink 
+colours similar to berries, as well as purples and oranges 
+to reflect on the healthy aspect of our product. We will
+also make use of black to provide contrast to the bright
+colours and enhance visual appeal.
+
+
+Iconography
+===========
+
+Our icons will have a flat look to them similar to the
+buttons to unify the look of the website.
+
+
+Typography
+==========
+
+We will make use of Arial Black for our text.
+
+
+Links
+=====
+
+Links will not be underlined but will be in a different colour
+to be pointed out for the user to click.
+
+Buttons
+=======
+
+Buttons will be flat designed using the chosen colours, and
+will flip colour when hovered over.
