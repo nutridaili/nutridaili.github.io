@@ -3,29 +3,98 @@
   <head>
     <link rel="StyleSheet" href="product_style.css">
     <meta name="author" content="Faizaan Chishtie">
+    <link rel="FunctionSheet" href="productJS.js">
   </head>
     <body id="ProductB">
-      <h1 style="text-align: center;"> Welcome to product page </h1>
-      <div>
-        <p id = "ProductP">
-            On this page you will be able to test out our product!<br/>
+
+      <div class="topnav" id="myTopnav">
+        <img src="image1.JPG" alt="NutriDaili logo" width="80" height="47">
+        <a href="#home">Home</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#about">About</a>
+        <a href="#other">Other</a>
+      </div>
+
+      <div id = "divProduct">
+        <br>
+        <h1> Try out our Calorie Counter! </h1>
+          <div class = "calorieTable">
+            <form name="calc">
+              <h2> CALORIE PROJECTION CALCULATOR </h2>
+              <div class="label">
+                <label> Age </label>
+                <span class="inCounter">
+                  <input name="age" type="number" id="age">
+                  <label class="inline">Years </label>
+                </span>
+              </div>
+              <div class="label">
+                <label> Gender </label>
+                <span class="inCounter">
+                  <input type="radio" name="sex" id="female" value="F" checked>
+                  <label for="female"> Female </label>
+                  <input type ="radio" name="sex" id="male" value="M" checked>
+                  <label for="male"> Male </label>
+                </span>
+              </div>
+              <div class="label">
+                <label> Weight </label>
+                <span class="inCounter">
+                  <input type="text" type="number" id="weight">
+                  <input type="radio" name ="units" id="pounds" value ="lbs" checked>
+                  <label for="pounds"> Pounds</label>
+                  <input type="radio" name ="units" id="kilos" value="kgs" checked>
+                  <label for="kilos"> Kilos</label>
+                </span>
+              </div>
+              <div class="label">
+                <span class=inCounter>
+                  <label> Height </label>
+                  <input type="radio" name="height" id="feet" value="F" checked onclick="out_feet()">
+                  <label for="feet"> Feet/Inches </label>
+                  <input type="radio" name="height" id="centi" value="cm" checked oncick="out_cm()">
+                  <label for="height"> Centimeters </label>
+                  <div id="feet_div" style="display:block;">
+                    <span>
+                      <label> Feet </label>
+                      <input type="text" type="number" id="feet_in">
+                      <label class="inline"> Inches </label>
+                      <input type="text" type="number" id="inches_in">
+                    </span>
+                  </div>
+                  <div id="centi_div" style="display:none;">
+                    <label> Centimeters </label>
+                    <input type="text" type="number" id="centi_in">
+                  </div>
+                </span>
+              </div>
+              <div class="label">
+                <label> Exercise Amount </label>
+                <select name="activity" id="activity">
+                  <option> No exercise </option>
+                  <option> 1-2 times a week</option>
+                  <option> 3 times a week</option>
+                  <option> 4 times a week</option>
+                  <option> 5 times a week</option>
+                  <option> Daily or near daily</option>
+                  <option> Daily (intense) or twice daily<option>
+                </select>
+              </div>
+              <button id = "button" onclick ="JsFunction()">Calculate</button>
+            </form>
+          </div>
+        <p id="output"></p>
+      </div>
+
+
+      <div id="divProduct">
+        <p style="color:blue;text-align:left;">
+          On this page you will be able to test out our product!<br/>
           All you'll need to do is enter your age, height, weight, and sex.<br/>
-          With this information we'll be able to give you a rough estimate about what your caloric intake should be,<br>
-          and a few recipies!<br><br>
+          With this information we'll be able to give you a rough estimate about what your caloric intake should be, and a few recipies!<br>
           With the NutriDaili App, you'll be able to log your calories by taking photos of your food!
         <p>
       </div>
-      <div>
-        <br>
-        <form name="calc">
-          <h2> CALORIE PROJECTION CALCULATOR </h2>
-          <div class="label">
-            <label> Age </label>
-            <button onclick ="JsFunction()">Submit</button>
-          </div>
-        </form>
-        <p id="output"></p>
 
-      </div>
     </body>
 </html>
