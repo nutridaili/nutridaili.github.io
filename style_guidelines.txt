@@ -11,8 +11,8 @@ The website should be overall welcoming to the user.
 Colours
 =======
 
-The colours that we will make use of are reddish-pink 
-colours similar to berries, as well as purples and oranges 
+The colours that we will make use of are reddish-pink
+colours similar to berries, as well as purples and oranges
 to reflect on the healthy aspect of our product. We will
 also make use of black to provide contrast to the bright
 colours and enhance visual appeal.
@@ -23,6 +23,7 @@ The codes are:
 #4CAF50
 #bdaeff
 #ff6680
+#bdaeff
 
 Iconography
 ===========
