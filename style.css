@@ -49,6 +49,32 @@ div.main {
     margin-top: 30px;
 }
 
+#pricing{
+  background-color:#f2f2f2;
+   color: orange;
+}
+table#pricing, th#pricing, td#pricing {
+  	color: white ;
+
+  	margin-bottom: 10px ;
+  	padding: 0px ;
+  }
+
+  .boxes {
+  	font-size: 40px;
+  	font-weight: bold;
+  	padding: 10px ;
+  	border: 1px black solid ;
+
+  }
+
+  .boxes:hover{
+
+  	font-size: 60px ;
+
+  }
+
+
 header {
     padding: 360;
     background-image: url("https://images.unsplash.com/photo-1490818387583-1baba5e638af?dpr=1&auto=compress,format&fit=crop&w=1531&h=&q=80&cs=tinysrgb&crop=");
