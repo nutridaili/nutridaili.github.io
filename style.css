@@ -4,8 +4,9 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  font-family: Verdana;
 }
-
+/* Navbar */
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
@@ -40,12 +41,40 @@ div.topnav img{
     color: white;
 }
 
+/* NavBar*/
 
 div.main {
     width: 100%;
     border: 1px solid black;
     margin-top: 30px;
 }
+
+div.pricing{
+  background-color:#f2f2f2;
+   color: orange;
+   margin-top: 0px;
+   padding: 0;
+}
+table#pricing, th#pricing, td#pricing {
+  	color: white ;
+  	margin-bottom: 10px ;
+  	padding: 30px ;
+  }
+
+  .boxes {
+  	font-size: 40px;
+  	font-weight: bold;
+  	padding: 10px ;
+  	border: 1px black solid ;
+
+  }
+
+  .boxes:hover{
+
+  	font-size: 60px ;
+
+  }
+
 
 header {
     padding: 360;
@@ -69,14 +98,6 @@ article {
     overflow: hidden;
     color: white;
     background-color: #bdaeff;
-}
-
-
-#ParaOne {
-text-align: center;
-font-family: 'fantasy', sans-serif;
-font-size: 50;
-color: purple;
 }
 
 .button {
@@ -120,6 +141,7 @@ color: purple;
     justify-content: center;
     z-index: 1;
     overflow: hidden;
+    background-color: #1b1e33;
 }
 
 #contact-content {
@@ -145,13 +167,16 @@ color: purple;
     display: block;
 }
 
-#contact-top {
+#contact-bottom {
     width: 100%;
+    font-size: 2em;
     text-align: center;
+    float: center;
 }
 
 #contact-title {
-    font-size: 2em;
+    font-size: 1.5em;
+    text-align: center;
     z-index: 1;
     letter-spacing: 2px;
     padding-top: 0%;
@@ -168,7 +193,7 @@ color: purple;
 }
 
 #contact-name-box, #contact-email-box {
-    background-color: black;
+    background-color: transparent;
     color: #FFC80A;
     padding: 0.25em 0.25em;
     outline: none;
@@ -218,4 +243,26 @@ color: purple;
 #contact-button {
     margin-top: 5%;
     margin-bottom: 5%;
+}
+
+/* copyright */
+p#copyright {
+    font-size: 50%;
+    color: #eeeeee;
+    font-weight: 300;
+    letter-spacing: 0.09375em;
+    transition-duration: 0.3s;
+}
+
+p#copyright:hover {
+    cursor: pointer;
+    color: #FFC80A;
+    transform: scale(1.05,1.05);
+    transition-duration: 0.3s;
+}
+
+#footer-copyright {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
 }
