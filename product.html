@@ -4,6 +4,14 @@
     <link rel="StyleSheet" href="product_style.css">
     <meta name="author" content="Faizaan Chishtie">
     <link rel="FunctionSheet" href="productJS.js">
+    <script>
+    function JsFunction(){
+      var text=document.getElementsById('text_in').value;
+      document.getElementsById('output').innerHTML = text;
+    }
+    </script>
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
     <body id="ProductB">
@@ -83,10 +91,11 @@
                   <option> Daily (intense) or twice daily<option>
                 </select>
               </div>
+              <input type="text" id="text_in">
               <button id = "button" onclick ="JsFunction()">Calculate</button>
+              <p id="output"></p>
             </form>
           </div>
-        <p id="output"></p>
       </div>
 
 
