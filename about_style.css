@@ -1,0 +1,14 @@
+body { 
+    overflow-y: scroll; 
+    padding: 0; 
+    font-family: Arial; 
+    font-size: 16px; 
+    color: #555; 
+    height: 2000px;
+}
+
+.up-pos{display: none; positon: fixed; top: 0; left: 0;}
+#up-wrapper{width: 500px; margin: 70px auto; text-align: left;}
+#up-container{background-color: #FFF; padding: 20px;}
+
+
