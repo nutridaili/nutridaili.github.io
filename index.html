@@ -1,4 +1,4 @@
-<DOCTYPE! html>
+﻿<DOCTYPE! html>
 <html>
 
 <head>
@@ -6,16 +6,27 @@
   <meta charset="utf-8" />
   <title style="text-align:center;"> NutriDaili </title style="text-align:center;">
   <meta name="Developers" content="FaizChishtie, Rohyr, wazaf0704, arese1999, amous123">
+  <link href="about_style.css" type="text/css" rel="StyleSheet">
+  <script type="text/javascript">
+      function toggle_visibility(id) {
+          var e = document.getElementById(id);
+          if (e.style.display == 'block')
+              e.style.display = 'none';
+          else
+              e.style.display = 'block';
+      }
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
 <div class="topnav" id="myTopnav">
   <img src="image1.JPG" alt="NutriDaili logo" width="80" height="47">
   <a href="index.html">Home</a>
+  <a href="#nutri">Product</a>
   <a href="#pricing">Pricing</a>
-  <a href="#about">About</a>
-  <a href="#other">Other</a>
-  <a href="product.html">Product</a>
+  <a href="#about">Team</a>
+  <a href="product.html">Calculator</a>
   <a href="#contact">Contact Us</a>
 </div>
 
@@ -26,64 +37,177 @@
   </header>
 
 
-  <article>
+  <article id="nutri">
     <h1>What is NutriDaili?</h1>
     <p>NutriDaili is a revolutionary app that let's you keep track of your diet while rewarding you for meeting your goals. When you are about to eat a meal, take a picture of it through the app and it will automatically count your calories for you.</p>
     <p>We teamed up with President's Choice to reward you with PC points for maintaining your diet and eating healthy, so you can save on those groceries the next time you need to shop.</p>
     <img src="pc-plus-logo.png" alt="PC Plus Logo">
   </article>
 
-  <div class = "pricing">
-  <h1 style="margin-top:0px;"> PRICING </h1>
+ </div>
+ 
+<article id="pricing">
+<div class = "pricing">
+<h1> <font color= FF8C3C;> Pricing </font></h1>
+<h2><p>$1.99 Monthly</p> </h2><hr>
 
-  <table>
-    <tr>
-    </tr>
-
-      <td><div class = "boxes">$1.99</div></td>
-
-      <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  	Aenean et felis diam. Integer vitae tortor cursus, facilisis
-  	 magna sit amet, efficitur augue. Proin et ipsum nec nibh vehicula cursus.
-  	 Nulla facilisi. Nullam aliquam ultrices interdum. Phasellus eleifend
-  	 leo quis mauris tempus, ultricies mollis arcu tincidunt.</td>
+<ul>
 
 
-    </tr>
+	<li>Calorie Goal</li>
+	<li>Healthy meal recipies every month</li>
+	<li>1500 bonus PC points (Included once when signing up)</li>
+
+<br>
+
+</ul>
+<h2><p>$3.99 Semi-Annually</p> </h2><hr>
+<ul>
 
 
-    <tr>
-        <td><div class = "boxes">$2.99</div></td>
-      <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  	Aenean et felis diam. Integer vitae tortor cursus, facilisis
-  	 magna sit amet, efficitur augue. Proin et ipsum nec nibh vehicula cursus.
-  	 Nulla facilisi. Nullam aliquam ultrices interdum. Phasellus eleifend
-  	 leo quis mauris tempus, ultricies mollis arcu tincidunt.
+	<li>Food Analysis (i.e. Learn which foods rank highest in the nutrients you care about.)</li>
+	<li>Meal Level Carbs, Protein and Fat (i.e view macronutrients by gram or percentage.)</li>
+	<li>3500 bonus PC points (Included once when signing up)</li>
+
+<br>
+</ul>
+
+<h2><p>$5.99 Annually</p> </h2><hr>
+<ul>
 
 
-  </td>
-    </tr>
-  <tr>
-        <td><div class = "boxes">$3.99</div></td>
-      <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  	Aenean et felis diam. Integer vitae tortor cursus, facilisis
-  	 magna sit amet, efficitur augue. Proin et ipsum nec nibh vehicula cursus.
-  	 Nulla facilisi. Nullam aliquam ultrices interdum. Phasellus eleifend
-  	 leo quis mauris tempus, ultricies mollis arcu tincidunt.</td>
-    </tr>
-  </table>
-  </div>
+	<li>Track your diet on the nutridaili app</li>
+	<li>Articles and tips by nutritionists</li>
+	<li>5500 bonus PC points (Included once when signing up)</li>
+
+<br>
+
+</ul>
+
+</div>
+</article>
 
   <article id="about">
-    <h1>About Us</h1>
-    <p>about us doods
-    <p>even more about us
-  </article>
 
-  <article id="other">
-    <h1>Other</h1>
-    <p>other stuff doods
-    <p>even more stuf doods
+        <h1>About Us</h1>
+
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <a href="javascript:void(0)" onclick="toggle_visibility('alex-up');">
+            <img src="alex.jpg" alt="Alex" style="width:183px;height:183px;">
+          </a>
+          <div class="container">
+            <div id="alex-up" class="up-pos">
+              <div id="up-wrapper">
+                  <div id="up-container" style="width:100%;">
+                  <h3 style="color: black;">Alex Moussa</h3>
+                  <h2>Alex Moussa</h2>
+                  <p class="title">CEO and Founder</p>
+                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                  <p>example@example.com</p>
+                  <p><button class="button">Contact</button></p>
+                  <p><a href="javascript:void(0)" onclick="toggle_visibility('alex-up');">Close</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="column">
+          <div class="card">
+            <a href="javascript:void(0)" onclick="toggle_visibility('faiz-up');">
+            	<img src="faiz.jpg" alt="Faiz" style="width:183px;height:183px;">
+            </a>
+            <div class="container">
+              <div id="faiz-up" class="up-pos">
+                <div id="up-wrapper">
+                    <div id="up-container" style="width:100%;">
+                    <h3 style="color: black;">Faizaan</h3>
+                    <h2>Faizaan</h2>
+                    <p class="title">CEO and Founder</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>example@example.com</p>
+                    <p><button class="button">Contact</button></p>
+                    <p><a href="javascript:void(0)" onclick="toggle_visibility('faiz-up');">Close</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <a href="javascript:void(0)" onclick="toggle_visibility('rohan-up');">
+            	<img src="rohan.jpg" alt="Rohan" style="width:183px;height:183px;">
+            </a>
+            <div class="container">
+              <div id="rohan-up" class="up-pos">
+                <div id="up-wrapper">
+                    <div id="up-container" style="width:100%;">
+                    <h3 style="color: black;">Rohan</h3>
+                    <h2>Rohan</h2>
+                    <p class="title">CEO and Founder</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>example@example.com</p>
+                    <p><button class="button">Contact</button></p>
+                    <p><a href="javascript:void(0)" onclick="toggle_visibility('rohan-up');">Close</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <a href="javascript:void(0)" onclick="toggle_visibility('anton-up');">
+            	<img src="anton.jpg" alt="Antonio" style="width:183px;height:183px;">
+            </a>
+            <div class="container">
+              <div id="anton-up" class="up-pos">
+                <div id="up-wrapper">
+                    <div id="up-container" style="width:100%;">
+                    <h3 style="color: black;">Anton</h3>
+                    <h2>Anton</h2>
+                    <p class="title">CEO and Founder</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>example@example.com</p>
+                    <p><button class="button">Contact</button></p>
+                    <p><a href="javascript:void(0)" onclick="toggle_visibility('anton-up');">Close</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <a href="javascript:void(0)" onclick="toggle_visibility('waleed-up');">
+            	<img src="waleed.jpg" alt="Waleed" style="width:183px;height:183px;">
+            </a>
+            <div class="container">
+              <div id="waleed-up" class="up-pos">
+                <div id="up-wrapper">
+                    <div id="up-container" style="width:100%;">
+                    <h3 style="color: black;">Waleed</h3>
+                    <h2>Waleed</h2>
+                    <p class="title">CEO and Founder</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>example@example.com</p>
+                    <p><button class="button">Contact</button></p>
+                    <p><a href="javascript:void(0)" onclick="toggle_visibility('waleed-up');">Close</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
   </article>
 
   <footer class="color" id="contact">

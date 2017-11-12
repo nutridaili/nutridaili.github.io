@@ -6,6 +6,7 @@ body {
   padding: 0;
   font-family: Verdana;
 }
+
 /* Navbar */
 /* Add a black background color to the top navigation */
 .topnav {
@@ -49,31 +50,8 @@ div.main {
     margin-top: 30px;
 }
 
-div.pricing{
-  background-color:#f2f2f2;
-   color: orange;
-   margin-top: 0px;
-   padding: 0;
-}
-table#pricing, th#pricing, td#pricing {
-  	color: white ;
-  	margin-bottom: 10px ;
-  	padding: 30px ;
-  }
 
-  .boxes {
-  	font-size: 40px;
-  	font-weight: bold;
-  	padding: 10px ;
-  	border: 1px black solid ;
 
-  }
-
-  .boxes:hover{
-
-  	font-size: 60px ;
-
-  }
 
 
 header {
@@ -99,6 +77,66 @@ article {
     color: white;
     background-color: #bdaeff;
 }
+div.pricing {
+ background-color: #bdaeff;
+}
+/*about us container*/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+up-container.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+up-container.button:hover {
+  background-color: #555;
+}
+
 
 .button {
     position: relative;
@@ -167,6 +205,7 @@ article {
     display: block;
 }
 
+
 #contact-bottom {
     width: 100%;
     font-size: 2em;
@@ -181,6 +220,8 @@ article {
     letter-spacing: 2px;
     padding-top: 0%;
 }
+
+
 
 .contact-stuff {
     font-size: 1em;
