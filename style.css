@@ -51,18 +51,6 @@ div.main {
 
 
 
-div.pricing{
-  background-color:#f2f2f2;
-   color: orange;
-   margin-top: 0px;
-   padding: 0;
-}
-
-
-  .boxes {
-	font weight: 10px
-  }
-
 
 
 header {
@@ -156,9 +144,6 @@ article {
     display: block;
 }
 
-#pricing2  {
-background-color: red ; 
-}
 
 #contact-bottom {
     width: 100%;
@@ -174,6 +159,11 @@ background-color: red ;
     letter-spacing: 2px;
     padding-top: 0%;
 }
+
+.pricing2  {
+background-color: red ; 
+}
+
 
 .contact-stuff {
     font-size: 1em;
