@@ -57,8 +57,9 @@ div.main {
 header {
     padding: 360;
     background-image: url("https://images.unsplash.com/photo-1490818387583-1baba5e638af?dpr=1&auto=compress,format&fit=crop&w=1531&h=&q=80&cs=tinysrgb&crop=");
-    background-image: cover;
+    background-size: cover;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     color: black;
     text-align: center;
 }
@@ -81,6 +82,11 @@ div.pricing {
  background-color: #bdaeff;
 }
 /*about us container*/
+#about{
+background-image: url("https://images.unsplash.com/photo-1495511623436-ba44aaee07cf?auto=format&fit=crop&w=1051&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+background-size: cover;
+background-repeat: no-repeat;
+}
 html {
   box-sizing: border-box;
 }
@@ -121,19 +127,19 @@ html {
   color: grey;
 }
 
-up-container.button {
+.button-2 {
   border: none;
   outline: 0;
   display: inline-block;
   padding: 8px;
-  color: white;
-  background-color: #000;
+  color: #000;
+  background-color: white;
   text-align: center;
   cursor: pointer;
   width: 100%;
 }
 
-up-container.button:hover {
+.button-2:hover {
   background-color: #555;
 }
 
