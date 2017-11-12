@@ -78,10 +78,10 @@ article {
 }
 div.pricing {
  background-color: #bdaeff;
- color = white ; 
+
 }
 
-div.pricing h1 {
+.pricing h1 {
 	color  = red ; 
 }
 
