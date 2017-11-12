@@ -78,10 +78,11 @@ article {
 }
 div.pricing {
  background-color: #bdaeff;
+ color = white ; 
 }
 
-div.txtb {
-color = white ; 
+div.pricing h1 {
+	color  = red ; 
 }
 
 .button {
