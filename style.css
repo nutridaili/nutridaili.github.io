@@ -80,6 +80,10 @@ div.pricing {
  background-color: #bdaeff;
 }
 
+div.txtb {
+color = white ; 
+}
+
 .button {
     position: relative;
     background-color: #bdaeff;
