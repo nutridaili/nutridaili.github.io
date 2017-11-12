@@ -156,6 +156,10 @@ article {
     display: block;
 }
 
+div.pricing2  {
+background-color: red ; 
+}
+
 #contact-bottom {
     width: 100%;
     font-size: 2em;
