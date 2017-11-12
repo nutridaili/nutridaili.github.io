@@ -76,6 +76,9 @@ article {
     color: white;
     background-color: #bdaeff;
 }
+div.pricing {
+background-color: yellow; 
+}
 
 .button {
     position: relative;
@@ -160,9 +163,6 @@ article {
     padding-top: 0%;
 }
 
-.pricing {
-background-color: yellow; 
-}
 
 
 .contact-stuff {
