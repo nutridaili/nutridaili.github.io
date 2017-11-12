@@ -30,10 +30,10 @@ div.topnav img{
     text-decoration: none;
     font-size: 17px;
 }
-/* Change the color of links on hover */
+/* Change the color of links on hover #ddd*/
 .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: white;
+    color: #FFC80A;
 }
 /* Add a color to the active/current link */
 .topnav a.active {
@@ -86,7 +86,7 @@ header {
 }
 footer{
   padding: 10;
-  background-color: black;
+  background-color: #1b1e33;
   color: #FFC80A;
   clear: left;
   text-align: center;
