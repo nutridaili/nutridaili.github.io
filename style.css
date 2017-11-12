@@ -49,11 +49,7 @@ div.main {
     margin-top: 30px;
 }
 
-div.ppp {
-	font-size: 45px ; 
-	color: black ; 
-	font-weight: 12px ; 
-}
+
 
 div.pricing{
   background-color:#f2f2f2;
@@ -61,11 +57,7 @@ div.pricing{
    margin-top: 0px;
    padding: 0;
 }
-table#pricing, th#pricing, td#pricing {
-  	color: white ;
-  	margin-bottom: 10px ;
-  	padding: 30px ;
-  }
+
 
   .boxes {
 	font weight: 10px
