@@ -3,19 +3,43 @@
   <head>
     <link rel="StyleSheet" href="product_style.css">
     <meta name="author" content="Faizaan Chishtie">
-    <link rel="FunctionSheet" href="productJS.js">
-    <script>
-    function JsFunction(){
-      var text=document.getElementsById('text_in').value;
-      document.getElementsById('output').innerHTML = text;
-    }
+    <script type="text/javascript">
+    /*
+    @Author Faizaan Chishtie
+    Contains functions for product page on NutriDaili website
+    */
+
+  function CollectData(){
+      document.getElementById("output").innerHTML = "hi";
+      weight = document.getElementById('weight').value;
+      height = document.getElementById('height').value;
+      age = document.getElementById('age').value;
+      gender = document.getElementById('gender').value;
+      exercise = document.getElementById('activity').value;
+      s = "" + weight + ", " + height + ", " + age + ", " + gender + ", " + exercise + ".";
+      out = "You should be eating: " + calculateCalories(weight,height,age,gender,exercise) + " Calories a day!";
+      document.getElementById("output").innerHTML =  out;
+    };
+
+    function calculateCalories(weight,height,age,gender,exercise){
+      return calculateBMR(weight,height,age,gender)*exercise;
+    };
+
+    function calculateBMR(weight, height, age, gender){
+      if (gender=="F"){
+        //Women	BMR = (10 × weight in kg) + (6.25 × height in cm) - (5 × age in years) - 161
+        return 10*weight + 6.25*height - 5*age - 161;
+      }
+      if (gender=="M"){
+        //Men	BMR = (10 × weight in kg) + (6.25 × height in cm) - (5 × age in years) + 5
+        return 10*weight + 6.25*height - 5*age +5;
+      }
+
+    };
     </script>
-
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
     <body id="ProductB">
-
       <div class="topnav" id="myTopnav">
         <img src="image1.JPG" alt="NutriDaili logo" width="80" height="47">
         <a href="index.html">Home</a>
@@ -25,6 +49,8 @@
         <a href="product.html">Product</a>
         <a href="index.html#contact">Contact Us</a>
       </div>
+
+
 
       <div id = "divProduct">
         <br>
@@ -41,58 +67,38 @@
               </div>
               <div class="label">
                 <label> Gender </label>
-                <span class="inCounter">
-                  <input type="radio" name="sex" id="female" value="F" checked>
-                  <label for="female"> Female </label>
-                  <input type ="radio" name="sex" id="male" value="M" checked>
-                  <label for="male"> Male </label>
+                <select id="gender">
+                  <option value="F">Female</option>
+                  <option value="M">Male</option>
+                </select>
                 </span>
               </div>
               <div class="label">
-                <label> Weight </label>
+                <label> Weight in kg</label>
                 <span class="inCounter">
-                  <input type="text" type="number" id="weight">
-                  <input type="radio" name ="units" id="pounds" value ="lbs" checked>
-                  <label for="pounds"> Pounds</label>
-                  <input type="radio" name ="units" id="kilos" value="kgs" checked>
-                  <label for="kilos"> Kilos</label>
+                  <input type="number" id="weight">
                 </span>
               </div>
               <div class="label">
                 <span class=inCounter>
                   <label> Height </label>
-                  <input type="radio" name="height" id="feet" value="F" checked onclick="out_feet()">
-                  <label for="feet"> Feet/Inches </label>
-                  <input type="radio" name="height" id="centi" value="cm" checked oncick="out_cm()">
-                  <label for="height"> Centimeters </label>
                   <div id="feet_div" style="display:block;">
-                    <span>
-                      <label> Feet </label>
-                      <input type="text" type="number" id="feet_in">
-                      <label class="inline"> Inches </label>
-                      <input type="text" type="number" id="inches_in">
-                    </span>
-                  </div>
-                  <div id="centi_div" style="display:none;">
                     <label> Centimeters </label>
-                    <input type="text" type="number" id="centi_in">
+                    <input type="number" id="height">
                   </div>
                 </span>
               </div>
               <div class="label">
                 <label> Exercise Amount </label>
                 <select name="activity" id="activity">
-                  <option> No exercise </option>
-                  <option> 1-2 times a week</option>
-                  <option> 3 times a week</option>
-                  <option> 4 times a week</option>
-                  <option> 5 times a week</option>
-                  <option> Daily or near daily</option>
-                  <option> Daily (intense) or twice daily<option>
+                  <option value="1"> No exercise </option>
+                  <option value = "1.375"> 1-2 times a week</option>
+                  <option value ="1.55"> 3 times a week</option>
+                  <option value = "1.725"> 5 times a week</option>
+                  <option value = "1.9"> Daily or near daily</option>
                 </select>
               </div>
-              <input type="text" id="text_in">
-              <button id = "button" onclick ="JsFunction()">Calculate</button>
+              <input type="button" value="Calculate" onclick="CollectData()">
               <p id="output"></p>
             </form>
           </div>
@@ -100,7 +106,7 @@
 
 
       <div id="divProduct">
-        <p style="color:blue;text-align:left;">
+        <p style="color:black;text-align:left;">
           On this page you will be able to test out our product!<br/>
           All you'll need to do is enter your age, height, weight, and sex.<br/>
           With this information we'll be able to give you a rough estimate about what your caloric intake should be, and a few recipies!<br>
