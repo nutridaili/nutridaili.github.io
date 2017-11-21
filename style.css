@@ -10,22 +10,24 @@ body {
 /* Navbar */
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
+    background-color: #ff6680;
+    /*#333;*/
     overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
+    box-shadow: 0 2px 4px 0;
 }
 /* Style the links inside the navigation bar */
 div.topnav img{
   float: left;
   text-align: center;
-  border: 1px solid #333;
 }
 .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: white;
+    /*#f2f2f2;*/
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -34,7 +36,7 @@ div.topnav img{
 /* Change the color of links on hover #ddd*/
 .topnav a:hover {
     background-color: white;
-    color: #FFC80A;
+    color: gold;
 }
 /* Add a color to the active/current link */
 .topnav a.active {
@@ -50,12 +52,8 @@ div.main {
     margin-top: 30px;
 }
 
-
-
-
-
 header {
-    padding: 360;
+    padding: 250;
     background-image: url("https://images.unsplash.com/photo-1490818387583-1baba5e638af?dpr=1&auto=compress,format&fit=crop&w=1531&h=&q=80&cs=tinysrgb&crop=");
     background-size: cover;
     background-attachment: fixed;
@@ -63,10 +61,43 @@ header {
     color: black;
     text-align: center;
 }
+
+#p1{
+  padding: 100;
+  background-image: url("https://images.unsplash.com/photo-1476733636740-24c58e0e7432?auto=format&fit=crop&w=1050&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: black;
+  text-align: center;
+  /*
+  outline-width: 20px;
+  outline-color: #ff6680;
+  */
+}
+#p2{
+  padding: 100;
+  background-image: url("https://images.unsplash.com/photo-1494390248081-4e521a5940db?auto=format&fit=crop&w=995&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: black;
+  text-align: center;
+}
+#p3{
+  padding: 100;
+  background-image: url("https://images.unsplash.com/photo-1478144849792-57dda02c07f7?auto=format&fit=crop&w=833&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: black;
+  text-align: center;
+}
+
 footer{
   padding: 10;
-  background-color: #1b1e33;
-  color: #FFC80A;
+  background-color: #ff6680;
+  color: white;
   clear: left;
   text-align: center;
 
@@ -75,18 +106,23 @@ article {
     margin-left: 0px;
     padding: 15em;
     overflow: hidden;
-    color: white;
-    background-color: #bdaeff;
+    color: #ff6680;
+    background-color: #EFF4F7;
+    /*#bdaeff;*/
 }
 div.pricing {
  background-color: #bdaeff;
 }
+
 /*about us container*/
 #about{
-background-image: url("https://images.unsplash.com/photo-1495511623436-ba44aaee07cf?auto=format&fit=crop&w=1051&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+/*background-image: url("https://images.unsplash.com/photo-1495511623436-ba44aaee07cf?auto=format&fit=crop&w=1051&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+*/
 background-size: cover;
 background-repeat: no-repeat;
+color:white;
 }
+
 html {
   box-sizing: border-box;
 }
@@ -145,8 +181,9 @@ html {
 
 
 .button {
-    position: relative;
-    background-color: #bdaeff;
+    background-color: gold;
+  /*  #FFAF28;*/
+    /*#bdaeff;*/
     border: none;
     font-size: 28px;
     color: #ff6680;
@@ -156,6 +193,7 @@ html {
     text-decoration: none;
     overflow: hidden;
     display: inline-block;
+    outline: none;
 }
 
 .button {border-radius: 12px;}
@@ -185,7 +223,7 @@ html {
     justify-content: center;
     z-index: 1;
     overflow: hidden;
-    background-color: #1b1e33;
+    background-color: #ff6680;
 }
 
 #contact-content {
@@ -241,19 +279,20 @@ html {
 
 #contact-name-box, #contact-email-box {
     background-color: transparent;
-    color: #FFC80A;
+    color: white;
     padding: 0.25em 0.25em;
     outline: none;
     outline-style: none;
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: solid #FFC80A 2px;
+    border-bottom: solid white 2px;
     width: 85%;
 }
 
 ::-webkit-input-placeholder {
     font-family: montserrat;
+    color: gold;
 }
 
 #name-elements, #email-elements {
@@ -267,11 +306,11 @@ html {
 
 #contact-message-box {
     background-color: transparent;
-    color: #FFC80A;
+    color: white;
     padding: 0.25em 0.25em;
     outline: none;
     outline-style: none;
-    border: solid #FFC80A 2px;
+    border: solid white 2px;
     width: 92.5%;
     resize: none;
 }
@@ -303,7 +342,7 @@ p#copyright {
 
 p#copyright:hover {
     cursor: pointer;
-    color: #FFC80A;
+    color: gold;
     transform: scale(1.05,1.05);
     transition-duration: 0.3s;
 }
