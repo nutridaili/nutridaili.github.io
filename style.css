@@ -73,11 +73,6 @@ header {
   text-align: center;
   opacity: 0.5;
   z-index: 2;
-
-  /*
-  outline-width: 20px;
-  outline-color: #ff6680;
-  */
 }
 #p2{
   padding: 100;
@@ -87,6 +82,8 @@ header {
   background-repeat: no-repeat;
   color: black;
   text-align: center;
+  opacity: 0.5;
+  z-index: 2;
 }
 #p3{
   padding: 100;
@@ -96,6 +93,8 @@ header {
   background-repeat: no-repeat;
   color: black;
   text-align: center;
+  opacity: 0.5;
+  z-index: 2;
 }
 
 
