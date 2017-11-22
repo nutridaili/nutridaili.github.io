@@ -96,6 +96,10 @@ header {
   opacity: 0.5;
   z-index: 2;
 }
+#p4{
+  padding: 20;
+  background-color: #d4e1d7;
+}
 
 
 footer{
@@ -153,6 +157,15 @@ html {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
 }
+a {
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+}
+
+.lin:hover{
+  opacity: 0.7;
+}
 
 .container {
   padding: 0 16px;
@@ -168,6 +181,7 @@ html {
   color: grey;
 }
 
+/*
 .button-2 {
   border: none;
   outline: 0;
@@ -183,7 +197,7 @@ html {
 .button-2:hover {
   background-color: #555;
 }
-
+*/
 
 .button {
     background-color: gold;
