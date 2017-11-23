@@ -17,12 +17,21 @@
       gender = document.getElementById('gender').value;
       exercise = document.getElementById('activity').value;
       s = "" + weight + ", " + height + ", " + age + ", " + gender + ", " + exercise + ".";
-      out = "You should be eating: " + calculateCalories(weight,height,age,gender,exercise) + " Calories a day!";
+      calcu_cal = calculateCalories(weight,height,age,gender,exercise)
+      out = "To maintain your weight: You should be eating: " + calcu_cal.toFixed(2) + " calories a day!";
       document.getElementById("output").innerHTML =  out;
+      out2 = "To gain weight: You should be eating: " + calculatePercentage(calcu_cal)[0].toFixed(2) + " calories a day!";
+      document.getElementById("Percent_1").innerHTML =  out2;
+      out3 = "To lose weight: You should be eating: " + calculatePercentage(calcu_cal)[1].toFixed(2) + " calories a day!";
+      document.getElementById("Percent_2").innerHTML =  out3;
     };
 
     function calculateCalories(weight,height,age,gender,exercise){
       return calculateBMR(weight,height,age,gender)*exercise;
+    };
+
+    function calculatePercentage(Calories){
+      return [Calories*1.15, Calories*0.85];
     };
 
     function calculateBMR(weight, height, age, gender){
@@ -74,7 +83,7 @@
                 </span>
               </div>
               <div class="label">
-                <label> Weight in kg</label>
+                <label> Weight(kg)</label>
                 <span class="inCounter">
                   <input type="number" id="weight">
                 </span>
@@ -99,7 +108,9 @@
                 </select>
               </div>
               <input type="button" value="Calculate" onclick="CollectData()">
+              <p id="Percent_1"></p>
               <p id="output"></p>
+              <p id="Percent_2"></p>
             </form>
           </div>
       </div>
